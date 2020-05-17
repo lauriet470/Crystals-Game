@@ -1,0 +1,58 @@
+.crystal-images{
+height: 960px;
+width:960px;
+text-align:center;
+position:relative;
+}
+
+.heading{
+    top: 5%; left: 40%;
+    transform:translate(-50%,-50%);
+    position : absolute;     
+
+}
+.bottom-right{
+position: absolute;
+bottom: 5%; left: 40%;
+transform: translate(-50%,-50%);
+}
+.container{
+    position:relative;
+    text-align:center;
+    color:white;
+    font-size: 30px;
+}
+.bluegem{
+    position:absolute;
+top:20%; right:60%;
+transform:translate(-50%,-50%);
+}    
+.yellowgem{
+    position: absolute;
+    top:20%; right: 20%;
+    transform: translate(-50%,-50%);
+}
+.btn-outline-danger{
+    position:absolute;
+    bottom: 30%; right:60%;
+    transform:translate(-50%,-50%);
+}
+.btn-outline-success{
+    position:absolute;
+    bottom:30%; right:20%;
+    transform:translate(-50%,-50%);
+}
+.scoreboard{
+    position:absolute;
+    bottom:1%;
+    left:20%;
+    transform:translate(-50%,-50%);
+    color:white;
+}
+.targetscore{
+position:absolute;
+bottom:1%;
+left:80%;
+transform:translate(-50%,-50%);
+color:white;
+}

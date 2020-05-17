@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Game</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <img src="images/background-image.jpg" alt="crystal image" style="width:960px;">
+        <div class="heading">Crystal Game!!!</div>
+        <div class="bottom-right">Pick a crystal to add a number to your score</div>
+        <div class="scoreboard"></div>
+        <div class="targetscore"></div>
+        <button type="button" class="btn btn-outline-primary bluegem" id="bluegem">Primary</button>
+        <button type="button" class="btn btn-outline-success" id="greenie">Success</button>
+        <button type="button" class="btn btn-warning- yellowgem" id="yellowButton">Warning</button>
+        <button type="button" class="btn btn-outline-danger" id="ruby">Danger</button>
+    </div>
+
+    <script>
+
+
+        var score = 0;
+        var targetNumber = 100
+        var numberOptions = [10, 5, 3, 7];
+
+        $(".scoreboard").text(score);
+        $(".targetscore").text(targetNumber);
+
+
+
+
+        $(".btn").on("click", function(){
+               
+               
+        var myId=$(this).attr("id");
+           if(myId==="bluegem"){
+        score += numberOptions[10];
+        console.log("bluegem Clicked");
+
+    }
+    else if (myId==="yellowButton"){
+        score += numberOptions[3];
+        console.log("yellowButton Clicked");
+
+    }
+    else if(myId==="greenie"){
+        score += numberOptions[5];
+        console.log("greenie clicked");
+    }
+    else if(myId=="ruby"){
+        score += numberOptions[7];
+        console.log("ruby clicked");
+    }
+    if(score === targetNumber){
+        alert("You Win!");
+        score=0;
+        targetNumber=mathRandom(max);
+    }
+$(".scoreboard").text(score);
+$(".targetscore").text(targetNumber);
+        });
+    </script>
+
+    </body>
+    </html>
